@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import "./WeatherForecast.css";
 import "./WeatherForecastDay";
@@ -25,13 +25,15 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="row">
           {forecast.map(function (dailyForecast, index) {
-            if (index < 6) {
+            if (index < 5) {
               // to only show 5 days
               return (
                 <div className="col" key={index}>
                   <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
