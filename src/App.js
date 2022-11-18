@@ -8,7 +8,7 @@ export default function App() {
         <Weather defaultCity="New York" />
 
         <footer>
-          Project created by Andree Miclaus
+          Project created by Andreea Miclaus
           <a
             href="https://github.com/andreeamiclaus/react-final-project"
             target="_blank"
